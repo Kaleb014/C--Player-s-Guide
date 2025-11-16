@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\c#PlayerGuide\\C--Player-s-Guide\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|f:\\c#playerguide\\c--player-s-guide\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|f:\\c#playerguide\\c--player-s-guide\\operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|solutionrelative:operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|f:\\c#playerguide\\c--player-s-guide\\customconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|solutionrelative:customconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|f:\\c#playerguide\\c--player-s-guide\\quests\\takinganumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|solutionrelative:quests\\takinganumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|f:\\c#playerguide\\c--player-s-guide\\quests\\buyinginventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|solutionrelative:quests\\buyinginventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|f:\\c#playerguide\\c--player-s-guide\\quests\\defenseofconsolas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7386B08E-83EB-456F-9C14-AB4D4C57FF36}|Practice.csproj|solutionrelative:quests\\defenseofconsolas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +34,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T09:25:16.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomConsole.cs",
+              "DocumentMoniker": "F:\\c#PlayerGuide\\C--Player-s-Guide\\CustomConsole.cs",
+              "RelativeDocumentMoniker": "CustomConsole.cs",
+              "ToolTip": "F:\\c#PlayerGuide\\C--Player-s-Guide\\CustomConsole.cs",
+              "RelativeToolTip": "CustomConsole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T09:25:12.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Operations.cs",
+              "DocumentMoniker": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Operations.cs",
+              "RelativeDocumentMoniker": "Operations.cs",
+              "ToolTip": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Operations.cs",
+              "RelativeToolTip": "Operations.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T09:25:01.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuyingInventory.cs",
+              "DocumentMoniker": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Quests\\BuyingInventory.cs",
+              "RelativeDocumentMoniker": "Quests\\BuyingInventory.cs",
+              "ToolTip": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Quests\\BuyingInventory.cs",
+              "RelativeToolTip": "Quests\\BuyingInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T09:22:53.69Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -22,6 +99,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DefenseOfConsolas.cs",
+              "DocumentMoniker": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Quests\\DefenseOfConsolas.cs",
+              "RelativeDocumentMoniker": "Quests\\DefenseOfConsolas.cs",
+              "ToolTip": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Quests\\DefenseOfConsolas.cs",
+              "RelativeToolTip": "Quests\\DefenseOfConsolas.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T09:17:20.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TakingANumber.cs",
+              "DocumentMoniker": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Quests\\TakingANumber.cs",
+              "RelativeDocumentMoniker": "Quests\\TakingANumber.cs",
+              "ToolTip": "F:\\c#PlayerGuide\\C--Player-s-Guide\\Quests\\TakingANumber.cs",
+              "RelativeToolTip": "Quests\\TakingANumber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T08:23:05.803Z",
+              "EditorCaption": ""
             }
           ]
         }

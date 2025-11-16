@@ -7,26 +7,21 @@
 
 		public static void GatherEggs()
 		{
-			if (!int.TryParse(Console.ReadLine(), out int chocolateEggs))
+			int chocolateEggs = TakingANumber.AskForNumber("How many chocolate eggs were gathered today? ");
+
+			if (chocolateEggs > 0)
 			{
-				Console.WriteLine("Cannot gather a fraction of an egg. (Enter a whole number.)");
-				GatherEggs();
+				int sistersEggs = chocolateEggs / 4;
+				int remainingEggs = chocolateEggs % 4;
+
+				Console.WriteLine("Eggs Gathered: {0}\nSisters' Eggs: {1}\nDuckbear's Eggs: {2}", chocolateEggs, sistersEggs, remainingEggs);
 			}
 			else
 			{
-				if (chocolateEggs > 0)
-				{
-					int sistersEggs = chocolateEggs / 4;
-					int remainingEggs = chocolateEggs % 4;
-
-					Console.WriteLine("Eggs Gathered: {0}\nSisters' Eggs: {1}\nDuckbear's Eggs: {2}", chocolateEggs, sistersEggs, remainingEggs);
-				}
-				else
-				{
-					Console.WriteLine("Cannot gather less than zero eggs.");
-				}
-				GatherEggs();
+				Console.WriteLine("Cannot gather less than zero eggs.");
 			}
+
+			GatherEggs();
 		}
 	}
 }

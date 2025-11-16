@@ -2,25 +2,13 @@
 {
 	internal class Watchtower
 	{
-		//Ask the user for an x value and a y value. These are coodinated of the enemy relative to the watchtower's location.
+		//Ask the user for an x value and a y value. These are coodinates of the enemy relative to the watchtower's location.
 		//Using the image on the right, if statements, and relational operators, display a message about what direction the enemy is coming from.
 		public static void GetEnemyDirection()
 		{
-			Console.Write("Enemy x? ");
-			if (!int.TryParse(Console.ReadLine(), out int enemyX))
-			{
-				Console.WriteLine("Enter only whole numbers.");
-				GetEnemyDirection();
-				return;
-			}
+			int enemyX = TakingANumber.AskForNumber("Enemy x? ");
 
-			Console.Write("Enemy y? ");
-			if (!int.TryParse(Console.ReadLine(), out int enemyY))
-			{
-				Console.WriteLine("Enter only whole numbers.");
-				GetEnemyDirection();
-				return;
-			}
+			int enemyY = TakingANumber.AskForNumber("Enemy y? ");
 
 			if (enemyX == 0 && enemyY == 0)
 				Console.WriteLine("The enemy is here!");

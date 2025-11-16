@@ -19,40 +19,32 @@
 			Console.WriteLine("'Lo there, Pilot! Where will ye be flying the Uncoded One's airship?");
 			while (pilotValue < minValue || pilotValue > maxValue)
 			{
-				Console.Write("Enter a whole value ranging from 0 - 100: ");
-				if (int.TryParse(Console.ReadLine(), out int _pilotValue))
-				{
-					pilotValue = _pilotValue;
-				}
+				pilotValue = TakingANumber.AskForNumberInRange("Enter a whole value ranging from 0 - 100: ", 0, 100);
 			}
 
 
 			Console.WriteLine("Hunter, where do you think the Uncoded One's airship pilot is navigating his vessel?");
 			while (hunterValue < minValue || hunterValue > maxValue)
 			{
-				Console.Write("Enter a whole value ranging from 0 - 100: ");
-				if (int.TryParse(Console.ReadLine(), out int _hunterValue))
+				hunterValue = TakingANumber.AskForNumberInRange("Enter a whole value ranging from 0 - 100: ", 0, 100);
+
+				if (hunterValue > pilotValue)
 				{
-					hunterValue = _hunterValue;
+					Console.WriteLine("You guessed too high! Try again.");
+					hunterValue = -1;
+					continue;
+				}
 
-					if (hunterValue > pilotValue)
-					{
-						Console.WriteLine("You guessed too high! Try again.");
-						hunterValue = -1;
-						continue;
-					}
+				else if (hunterValue < pilotValue)
+				{
+					Console.WriteLine("You guessed too low! Try again.");
+					hunterValue = -1;
+					continue;
+				}
 
-					else if (hunterValue < pilotValue)
-					{
-						Console.WriteLine("You guessed too low! Try again.");
-						hunterValue = -1;
-						continue;
-					}
-
-					else
-					{
-						Console.WriteLine("That's correct, excellent job!");
-					}
+				else
+				{
+					Console.WriteLine("That's correct, excellent job!");
 				}
 			}
 		}

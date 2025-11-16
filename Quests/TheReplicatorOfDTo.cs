@@ -14,12 +14,10 @@
 
 			for (int i = 0; i < firstArray.Length;)
 			{
-				Console.WriteLine("Please input a whole number...");
-				if (int.TryParse(Console.ReadLine(), out int inputValue))
-				{
-					firstArray[i] = inputValue;
-					i++;
-				}
+				int inputValue = TakingANumber.AskForNumber("Please input a whole number...");
+
+				firstArray[i] = inputValue;
+				i++;
 			}
 
 			int[] secondArray = new int[5];

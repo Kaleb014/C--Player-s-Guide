@@ -16,10 +16,9 @@
 			string userName = Console.ReadLine()!;
 
 			Console.Write("The following items are available:\n1 - Rope\n2 - Torches\n" +
-					"3 - Climing Equipment\n4 - Clean Water\n5 - Machete\n6 - Canoe\n7 - Food Supplies\n" +
-					"What number do you want to see the price of? ");
+					"3 - Climing Equipment\n4 - Clean Water\n5 - Machete\n6 - Canoe\n7 - Food Supplies\n");
 
-			string input = Console.ReadLine()!;
+			string input = TakingANumber.AskForNumber("What number do you want to see the price of? ").ToString();
 
 			switch (input)
 			{

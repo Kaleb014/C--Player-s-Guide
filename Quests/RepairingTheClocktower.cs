@@ -8,23 +8,18 @@
 
 		public static void TickTockOnTheClock()
 		{
-			Console.Write("Clock Value? ");
-			if (!int.TryParse(Console.ReadLine(), out int _tickOrTock))
+			int tickOrTock = TakingANumber.AskForNumberInRange("Clock value? (Enter a value ranging from -2,147,483,647 to 2,147,483,647) ", -2147483647, 2147483647);
+			
+			switch (tickOrTock % 2)
 			{
-				Console.WriteLine("Enter a value ranging from -2,147,483,647 to 2,147,483,647.");
+				case 0:
+					Console.WriteLine("Tick");
+					break;
+				default:
+					Console.WriteLine("Tock");
+					break;
 			}
-			else
-			{
-				switch (_tickOrTock % 2)
-				{
-					case 0:
-						Console.WriteLine("Tick");
-						break;
-					default:
-						Console.WriteLine("Tock");
-						break;
-				}
-			}
+
 			TickTockOnTheClock();
 		}
 	}
