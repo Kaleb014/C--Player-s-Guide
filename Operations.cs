@@ -39,7 +39,8 @@
 				"Dominion of Kings",
 				"Duckbear",
 				"The Replicator of D'To",
-				"The Laws of Freach"
+				"The Laws of Freach - Compute Minimum and Average",
+				"Countdown from 10 to 1"
 			};
 		}
 
@@ -97,7 +98,11 @@
 					RunSubroutine = true;
 					break;
 				case "11":
-					SelectedSubroutine = Quests.TheLawsOfFreach.ComputeMinimumAndAverageValues;
+					SelectedSubroutine = Quests.TheLawsOfFreach.ComputeMinimumAndAverageValuesForeachLoop;
+					RunSubroutine = true;
+					break;
+				case "12":
+					SelectedSubroutine = () => Quests.TheLawsOfFreach.CountDownFromTenToOne();
 					RunSubroutine = true;
 					break;
 				default:

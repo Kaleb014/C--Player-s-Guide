@@ -2,6 +2,18 @@
 {
 	internal class TheLawsOfFreach
 	{
+		public static void CountDownFromTenToOne(int number = 10)
+		{
+			//Write code that counts down from 10 to 1 using a recursive method
+
+			Console.WriteLine(number);
+
+			if(number != 1)
+			{
+				number--;
+				CountDownFromTenToOne(number);
+			}
+		}
 		public static void ComputeMinimumAndAverageValuesForLoop()
 		{
 			//Start with the code for computing an array's minimum and average values
@@ -32,7 +44,7 @@
 		}
 
 
-		public static void ComputeMinimumAndAverageValues()
+		public static void ComputeMinimumAndAverageValuesForeachLoop()
 		{
 			//Start with the code for computing an array's minimum and average values
 			//in the section "Some Examples with Arrays," starting on page 94.
