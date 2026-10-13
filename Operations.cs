@@ -40,12 +40,14 @@
 				"Duckbear",
 				"The Replicator of D'To",
 				"The Laws of Freach - Compute Minimum and Average",
-				"Countdown from 10 to 1"
+				"Countdown from 10 to 1",
+				"Hunting the Manticore"
 			};
 		}
 
 		public void ChooseSubroutine()
 		{
+			Console.Clear();
 			Console.WriteLine("Which program do you wish to run? (Input corresponding list number for the program.)");
 
 			for (int i = 0; i < ProgramList.Length; i++)
@@ -105,6 +107,10 @@
 					SelectedSubroutine = () => Quests.TheLawsOfFreach.CountDownFromTenToOne();
 					RunSubroutine = true;
 					break;
+				case "13":
+					SelectedSubroutine = () => Quests.HuntingTheManticore.TheHunt();
+					RunSubroutine = true;
+					break;
 				default:
 					break;
 			}
@@ -112,9 +118,12 @@
 
 		public void RunSelectedSubroutine()
 		{
+
 			bool checkRerun = false;
+			
 			while (RunSubroutine)
 			{
+				Console.Clear();
 				SelectedSubroutine();
 				checkRerun = true;
 
@@ -137,13 +146,7 @@
 
 		public bool ExitSubroutine(string input)
 		{
-			if (input == "exit")
-			{
-				RunSubroutine = false;
-				return RunSubroutine;
-			}
-
-			return true;
+			return RunSubroutine = input != "exit";
 		}
 	}
 }
