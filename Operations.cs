@@ -41,7 +41,8 @@
 				"The Replicator of D'To",
 				"The Laws of Freach - Compute Minimum and Average",
 				"Countdown from 10 to 1",
-				"Hunting the Manticore"
+				"Hunting the Manticore",
+				"Simula's Test"
 			};
 		}
 
@@ -111,6 +112,10 @@
 					SelectedSubroutine = () => Quests.HuntingTheManticore.TheHunt();
 					RunSubroutine = true;
 					break;
+				case "14":
+					SelectedSubroutine = () => Quests.SimulasTest.RunTest();
+					RunSubroutine = true;
+					break;
 				default:
 					break;
 			}
@@ -129,7 +134,7 @@
 
 				while (checkRerun)
 				{
-					Console.WriteLine("Type 'EXIT' to exit the subroutine or press [ENTER] to run it again.");
+					Console.WriteLine("Input 'EXIT' to exit the subroutine or press [ENTER] to run it again.");
 					string input = Console.ReadLine().ToLower();
 
 					if (input == "")
